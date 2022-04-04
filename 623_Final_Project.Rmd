@@ -1,0 +1,376 @@
+---
+title: "623_Final_Project"
+author: "Marc McCoy"
+date: "02/04/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warn=FALSE, message=FALSE)
+pack <- c("knitr", "rmarkdown", "knitcitations", "pander", "qwraps2")
+
+new.packages <- pack[!(pack %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+lapply(pack, require, character.only = TRUE)
+```
+
+```{css, echo=FALSE}
+.blackbox {
+  padding: 1em;
+  background: #EFFAFE;
+  color: black;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.center {
+  text-align: center;
+}
+```
+```{r}
+#install.packages("gtsummary")
+install.packages("tidyverse")
+```
+
+
+```{r}
+library(ggplot2)
+library(Hmisc)
+library(GGally)
+library(lmtest)
+library(AER)
+library(WebPower)
+library(vcdExtra)
+library(MASS)
+library(gtsummary)
+library(AER)
+library(survival)
+library(survminer) 
+library(Rcpp)
+library(tidyr)
+packageVersion("gtsummary")
+```
+
+
+```{r}
+SA_df <- read.csv("SA_df.csv", header=TRUE) #load data
+head(SA_df)
+```
+
+```{r}
+group <- SA_df %>% select(Sex, Primary.Site, T.stage, HPV.status, Therapy, early_late) 
+table1 <- tbl_summary(group)
+
+table1 <- 
+  tbl_summary(
+    group,
+    by = early_late, # split table by group
+    missing = "no" # don't list missing data separately
+  ) %>%
+  add_n() %>% # add column with total number of non-missing observations
+  add_p() %>% # test for a difference between groups
+  modify_header(label = "**Variable**") %>% # update the column header
+  bold_labels()
+
+table1
+```
+```{r}
+SA_df_late <- SA_df[SA_df$early_late == 'Late Stage',]
+SA_df_late
+```
+```{r}
+anat_df_L <- SA_df_late[SA_df_late$Primary.Site == 'Larynx',]
+anat_df_N <- SA_df_late[SA_df_late$Primary.Site == 'Nasopharynx',]
+anat_df_O <- SA_df_late[SA_df_late$Primary.Site == 'Oropharynx',]
+anat_df_H <- SA_df_late[SA_df_late$Primary.Site == 'Hypopharynx',]
+```
+
+```{r}
+#locoregional is significant
+#distant is not significant
+#death is not significant
+
+status <- anat_df_L[["Death"]]
+time <- anat_df_L[["Death_Time"]]
+group <- anat_df_L[["Primary.Site"]]
+anat_larynx <- cbind(status, time, group)
+anat_larynx <- data.frame(anat_larynx)
+
+status <- anat_df_N[["Death"]]
+time <- anat_df_N[["Death_Time"]]
+group <- anat_df_N[["Primary.Site"]]
+anat_nasopharynx <- cbind(status, time, group)
+anat_nasopharynx <- data.frame(anat_nasopharynx)
+
+status <- anat_df_O[["Death"]]
+time <- anat_df_O[["Death_Time"]]
+group <- anat_df_O[["Primary.Site"]]
+anat_oropharynx <- cbind(status, time, group)
+anat_oropharynx <- data.frame(anat_oropharynx)
+
+status <- anat_df_H[["Death"]]
+time <- anat_df_H[["Death_Time"]]
+group <- anat_df_H[["Primary.Site"]]
+anat_hypopharynx <- cbind(status, time, group)
+anat_hypopharynx <- data.frame(anat_hypopharynx)
+
+
+df_final <- rbind(anat_larynx, anat_nasopharynx, anat_oropharynx, anat_hypopharynx)
+
+df_final <- transform(df_final,
+                      time = as.numeric(time),
+                      status = as.numeric(status),
+                      group = as.factor(group))
+
+df_final
+```
+```{r}
+fit <- survfit(Surv(time, status) ~ group, data = df_final)
+summary(fit)$table
+
+ggsurv <- ggsurvplot(fit, pval = FALSE, conf.int = FALSE, risk.table.col = "strata",
+                     risk.table = TRUE, linetype = "strata",
+                     ggtheme = theme_bw(), palette = "strata",
+                     xlab = "Time (days)"
+                     )
+
+ggsurv$table <- ggrisktable(fit, 
+                            data = df_final, 
+                            color = "strata", 
+                            y.text = F,   ylab = "",  xlab = "",
+                            tables.theme = theme_cleantable(),
+                            )
+
+ggsurv
+```
+```{r}
+SA_df_late
+```
+```{r}
+status <- SA_df_late[["Death"]]
+t <- SA_df_late[["Death_Time"]]
+site <- SA_df_late[["Primary.Site"]]
+T_stage <- SA_df_late[["T.stage"]]
+TNM_stage <- SA_df_late[["TNM.group.stage"]]
+final_df <- cbind(status, time, site, T_stage, TNM_stage)
+final_df <- data.frame(final_df)
+final_df
+```
+```{r}
+df_final <- transform(final_df,
+                      t = as.numeric(t),
+                      status = as.numeric(status),
+                      site = as.factor(site),
+                      T_stage = as.factor(T_stage),
+                      TNM_stage = as.factor(TNM_stage))
+
+df_final
+```
+```{r}
+survobj <- Surv(t, status)
+model1 <- coxph(formula = survobj~T_stage, data=final_df, method="efron")
+summary(model1)
+```
+```{r}
+model_z <- cox.zph(model1)
+model_z
+ggcoxzph(model_z)
+```
+
+
+
+
+
+```{r}
+LR_df <- rbind(anat_oropharynx, anat_hypopharynx)
+
+LR_df <- transform(LR_df,
+                   time = as.numeric(time),
+                   status = as.numeric(status),
+                   group = as.factor(group))
+
+survdiff(Surv(time, status) ~ group, data=LR_df)
+```
+```{r}
+LR_df <- rbind(anat_nasopharynx, anat_hypopharynx)
+
+LR_df <- transform(LR_df,
+                   time = as.numeric(time),
+                   status = as.numeric(status),
+                   group = as.factor(group))
+
+survdiff(Surv(time, status) ~ group, data=LR_df)
+```
+```{r}
+LR_df <- rbind(anat_larynx, anat_hypopharynx)
+
+LR_df <- transform(LR_df,
+                   time = as.numeric(time),
+                   status = as.numeric(status),
+                   group = as.factor(group))
+
+survdiff(Surv(time, status) ~ group, data=LR_df)
+```
+```{r}
+LR_df <- rbind(anat_oropharynx, anat_larynx)
+
+LR_df <- transform(LR_df,
+                   time = as.numeric(time),
+                   status = as.numeric(status),
+                   group = as.factor(group))
+
+survdiff(Surv(time, status) ~ group, data=LR_df)
+```
+```{r}
+LR_df <- rbind(anat_oropharynx, anat_nasopharynx)
+
+LR_df <- transform(LR_df,
+                   time = as.numeric(time),
+                   status = as.numeric(status),
+                   group = as.factor(group))
+
+survdiff(Surv(time, status) ~ group, data=LR_df)
+```
+```{r}
+HPV_df <- read.csv("HPV_SA_df.csv", header=TRUE) #load data
+head(HPV_df)
+```
+```{r}
+HPV_df_pos <- HPV_df[HPV_df$HPV.status == '+',]
+HPV_df_neg <- HPV_df[HPV_df$HPV.status == '-',]
+```
+
+```{r}
+#locoregional is significant
+#distant is not significant
+#death is not significant
+
+status <- HPV_df_pos[["Locoregional"]]
+time <- HPV_df_pos[["LR_Time"]]
+group <- HPV_df_pos[["HPV.status"]]
+hpv_pos <- cbind(status, time, group)
+hpv_pos <- data.frame(hpv_pos)
+
+status <- HPV_df_neg[["Locoregional"]]
+time <- HPV_df_neg[["LR_Time"]]
+group <- HPV_df_neg[["HPV.status"]]
+hpv_neg <- cbind(status, time, group)
+hpv_neg <- data.frame(hpv_neg)
+
+
+df_final <- rbind(hpv_pos, hpv_neg)
+
+df_final <- transform(df_final,
+                      time = as.numeric(time),
+                      status = as.numeric(status),
+                      group = as.factor(group))
+
+df_final
+```
+```{r}
+fit <- survfit(Surv(time, status) ~ group, data = df_final)
+summary(fit)$table
+
+ggsurvplot(fit, pval = TRUE, conf.int = TRUE,
+           risk.table = TRUE, risk.table.col = "strata",
+           linetype = "strata", surv.median.line = "hv",
+           ggtheme = theme_bw(), palette = c("#E7B800", "#2E9FDF"),
+           xlab = "Time (days)"
+           )
+```
+```{r}
+survdiff(Surv(time, status) ~ group, data=df_final)
+```
+
+
+
+
+
+
+```{r}
+#locoregional is significant
+#distant is not significant
+#death is not significant
+
+status <- HPV_df_pos[["Death"]]
+time <- HPV_df_pos[["Death_Time"]]
+group <- HPV_df_pos[["HPV.status"]]
+hpv_pos <- cbind(status, time, group)
+hpv_pos <- data.frame(hpv_pos)
+
+status <- HPV_df_neg[["Death"]]
+time <- HPV_df_neg[["Death_Time"]]
+group <- HPV_df_neg[["HPV.status"]]
+hpv_neg <- cbind(status, time, group)
+hpv_neg <- data.frame(hpv_neg)
+
+
+df_final <- rbind(hpv_pos, hpv_neg)
+
+df_final <- transform(df_final,
+                      time = as.numeric(time),
+                      status = as.numeric(status),
+                      group = as.factor(group))
+
+df_final
+```
+```{r}
+fit <- survfit(Surv(time, status) ~ group, data = df_final)
+summary(fit)$table
+
+ggsurvplot(fit, pval = TRUE, conf.int = TRUE,
+           risk.table = TRUE, risk.table.col = "strata",
+           linetype = "strata", surv.median.line = "hv",
+           ggtheme = theme_bw(), palette = c("#E7B800", "#2E9FDF"),
+           xlab = "Time (days)"
+           )
+```
+```{r}
+survdiff(Surv(time, status) ~ group, data=df_final)
+```
+
+
+
+```{r}
+#locoregional is significant
+#distant is not significant
+#death is not significant
+
+status <- HPV_df_pos[["Distant"]]
+time <- HPV_df_pos[["DM_Time"]]
+group <- HPV_df_pos[["HPV.status"]]
+hpv_pos <- cbind(status, time, group)
+hpv_pos <- data.frame(hpv_pos)
+
+status <- HPV_df_neg[["Distant"]]
+time <- HPV_df_neg[["DM_Time"]]
+group <- HPV_df_neg[["HPV.status"]]
+hpv_neg <- cbind(status, time, group)
+hpv_neg <- data.frame(hpv_neg)
+
+
+df_final <- rbind(hpv_pos, hpv_neg)
+
+df_final <- transform(df_final,
+                      time = as.numeric(time),
+                      status = as.numeric(status),
+                      group = as.factor(group))
+
+df_final
+```
+```{r}
+fit <- survfit(Surv(time, status) ~ group, data = df_final)
+summary(fit)$table
+
+ggsurvplot(fit, pval = TRUE, conf.int = TRUE,
+           risk.table = TRUE, risk.table.col = "strata",
+           linetype = "strata", surv.median.line = "hv",
+           ggtheme = theme_bw(), palette = c("#E7B800", "#2E9FDF"),
+           xlab = "Time (days)"
+           )
+```
+```{r}
+survdiff(Surv(time, status) ~ group, data=df_final)
+```
+
+

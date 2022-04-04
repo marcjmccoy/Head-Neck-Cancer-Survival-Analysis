@@ -1,0 +1,191 @@
+Patient #,Sex,Primary Site,T-stage,N-stage,M-stage,TNM group stage,HPV status,Time – diagnosis to last follow-up(days),Therapy,Locoregional,Distant,Death,LR_Time,DM_Time,Death_Time,early_late
+HN-HGJ-001,M,Larynx,T3,N0,M0,III,-,2123.0,chemo radiation,1,0,0,692.0,2123.0,2123.0,Late Stage
+HN-HGJ-002,M,Nasopharynx,T1,N1,M0,IIB,-,2114.0,chemo radiation,1,0,0,918.0,2114.0,2114.0,Early Stage
+HN-HGJ-003,M,Larynx,T3,N2b,M0,IVA,,1098.0,chemo radiation,1,1,1,441.0,441.0,1098.0,Late Stage
+HN-HGJ-004,M,Nasopharynx,T3,N1,M0,III,,2974.0,radiation,0,0,0,2974.0,2974.0,2974.0,Late Stage
+HN-HGJ-005,M,Nasopharynx,T1,N1,M0,IIB,-,2509.0,chemo radiation,0,0,1,2509.0,2509.0,2509.0,Early Stage
+HN-HGJ-006,F,Nasopharynx,T1,N2b,M0,III,,3345.0,chemo radiation,0,0,0,3345.0,3345.0,3345.0,Late Stage
+HN-HGJ-007,M,Oropharynx,T4,N2b,M0,IVA,+,361.0,chemo radiation,0,1,1,361.0,332.0,361.0,Late Stage
+HN-HGJ-008,M,Oropharynx,T2,N2b,M0,IVA,,2072.0,chemo radiation,0,0,0,2072.0,2072.0,2072.0,Late Stage
+HN-HGJ-009,M,Larynx,T3,N0,M0,III,-,1936.0,chemo radiation,0,0,0,1936.0,1936.0,1936.0,Late Stage
+HN-HGJ-010,F,Oropharynx,T2,N2b,M0,IVA,-,1938.0,chemo radiation,0,0,0,1938.0,1938.0,1938.0,Late Stage
+HN-HGJ-011,M,Larynx,T3,N2b,M0,IVA,,1887.0,chemo radiation,0,0,0,1887.0,1887.0,1887.0,Late Stage
+HN-HGJ-013,F,Oropharynx,T3,N2b,M0,IVA,+,1414.0,chemo radiation,0,0,0,1414.0,1414.0,1414.0,Late Stage
+HN-HGJ-014,M,Larynx,T1,N2b,Mx,IVA,,479.0,chemo radiation,0,1,1,479.0,164.0,551.0,Late Stage
+HN-HGJ-015,F,Oropharynx,T2,N2b,M0,IVA,,1133.0,chemo radiation,0,0,0,1133.0,1133.0,1133.0,Late Stage
+HN-HGJ-016,F,Oropharynx,T3,N0,M0,III,,2498.0,chemo radiation,0,0,0,2498.0,2498.0,2498.0,Late Stage
+HN-HGJ-017,M,Oropharynx,T4,N1,M0,IVA,,859.0,chemo radiation,1,0,1,340.0,859.0,859.0,Late Stage
+HN-HGJ-018,F,Oropharynx,T4,N2c,M0,IVA,+,1451.0,chemo radiation,1,0,0,1136.0,1451.0,1451.0,Late Stage
+HN-HGJ-019,M,Hypopharynx,T1,N2b,M0,IVA,+,1598.0,chemo radiation,0,1,1,1598.0,1228.0,1598.0,Late Stage
+HN-HGJ-020,M,Larynx,T3,N0,M0,III,-,2119.0,chemo radiation,0,0,0,2119.0,2119.0,2119.0,Late Stage
+HN-HGJ-021,M,Larynx,T3,N2c,M0,IVA,,376.0,chemo radiation,0,1,1,376.0,376.0,414.0,Late Stage
+HN-HGJ-022,M,Larynx,T3,N1,M0,III,-,1663.0,chemo radiation,0,0,0,1663.0,1663.0,1663.0,Late Stage
+HN-HGJ-023,M,Nasopharynx,T1,N3,M0,IVB,,3261.0,chemo radiation,0,0,0,3261.0,3261.0,3261.0,Late Stage
+HN-HGJ-024,M,Larynx,T4,N2c,Mx,IVA,,911.0,chemo radiation,0,1,1,911.0,181.0,911.0,Late Stage
+HN-HGJ-025,M,Oropharynx,T4,N2c,M0,IVA,-,2596.0,chemo radiation,0,0,0,2596.0,2596.0,2596.0,Late Stage
+HN-HGJ-026,M,Oropharynx,T3,N1,M0,III,,2628.0,chemo radiation,0,0,0,2628.0,2628.0,2628.0,Late Stage
+HN-HGJ-028,M,Oropharynx,T2,N1,M0,III,+,1634.0,chemo radiation,1,1,1,1192.0,1149.0,1634.0,Late Stage
+HN-HGJ-029,F,Oropharynx,T1,N2b,M0,IVA,+,1846.0,chemo radiation,0,0,0,1846.0,1846.0,1846.0,Late Stage
+HN-HGJ-030,F,Oropharynx,T1,N2b,M0,IVA,,2133.0,chemo radiation,0,0,0,2133.0,2133.0,2133.0,Late Stage
+HN-HGJ-031,M,Oropharynx,T4,N2c,M0,IVA,,884.0,chemo radiation,1,0,0,804.0,884.0,884.0,Late Stage
+HN-HGJ-032,F,Oropharynx,T2,N2b,M0,IVA,,2972.0,chemo radiation,0,0,0,2972.0,2972.0,2972.0,Late Stage
+HN-HGJ-033,M,Nasopharynx,T3,N2a,M0,III,,2940.0,chemo radiation,0,1,0,2940.0,741.0,2940.0,Late Stage
+HN-HGJ-034,M,Oropharynx,T3,N2b,M0,IVA,,2684.0,chemo radiation,0,0,0,2684.0,2684.0,2684.0,Late Stage
+HN-HGJ-035,M,Oropharynx,T2,N2b,M0,IVA,+,1962.0,chemo radiation,0,0,0,1962.0,1962.0,1962.0,Late Stage
+HN-HGJ-036,M,Oropharynx,T3,N2b,M0,IVA,+,1495.0,chemo radiation,0,0,0,1495.0,1495.0,1495.0,Late Stage
+HN-HGJ-037,M,Oropharynx,T2,N2b,M0,IVA,,1091.0,chemo radiation,0,0,0,1091.0,1091.0,1091.0,Late Stage
+HN-HGJ-038,M,Oropharynx,T4,N2c,M0,IVA,,847.0,chemo radiation,0,0,0,847.0,847.0,847.0,Late Stage
+HN-HGJ-039,M,Oropharynx,T1,N2a,M0,IVA,,2188.0,radiation,0,0,0,2188.0,2188.0,2188.0,Late Stage
+HN-HGJ-040,M,Hypopharynx,T4,N2c,M0,IVA,-,603.0,chemo radiation,0,1,1,603.0,408.0,603.0,Late Stage
+HN-HGJ-042,M,Larynx,T3,N0,M0,III,-,2005.0,chemo radiation,0,0,0,2005.0,2005.0,2005.0,Late Stage
+HN-HGJ-043,M,Oropharynx,T2,N2c,M0,IVA,,3114.0,chemo radiation,0,0,0,3114.0,3114.0,3114.0,Late Stage
+HN-HGJ-044,M,Hypopharynx,T3,N1,M0,III,-,1843.0,chemo radiation,0,0,1,1843.0,1843.0,1843.0,Late Stage
+HN-HGJ-045,M,Nasopharynx,T3,N1,M0,III,-,1939.0,chemo radiation,1,0,0,1780.0,1939.0,1939.0,Late Stage
+HN-HGJ-046,M,Oropharynx,T4,N2c,M0,IVA,,2010.0,chemo radiation,0,0,0,2010.0,2010.0,2010.0,Late Stage
+HN-HGJ-047,M,Nasopharynx,T3,N1,M0,III,-,2449.0,chemo radiation,1,0,0,1729.0,2449.0,2449.0,Late Stage
+HN-HGJ-048,M,Oropharynx,T4,N2c,M0,IVA,,2751.0,chemo radiation,0,0,0,2751.0,2751.0,2751.0,Late Stage
+HN-HGJ-049,M,Nasopharynx,T1,N1,M0,II,,3402.0,chemo radiation,0,0,0,3402.0,3402.0,3402.0,Early Stage
+HN-HGJ-050,M,Oropharynx,T3,N2b,M0,IVA,+,1697.0,chemo radiation,0,0,0,1697.0,1697.0,1697.0,Late Stage
+HN-HGJ-051,M,Nasopharynx,T2,N2b,M0,III,-,887.0,chemo radiation,0,1,1,887.0,280.0,887.0,Late Stage
+HN-HGJ-052,F,Oropharynx,T2,N2a,M0,IVA,+,1923.0,chemo radiation,0,0,0,1923.0,1923.0,1923.0,Late Stage
+HN-HGJ-053,M,Oropharynx,T3,N0,M0,III,-,1966.0,radiation,0,0,0,1966.0,1966.0,1966.0,Late Stage
+HN-HGJ-054,M,Larynx,T3,N2b,M0,IVA,,1374.0,chemo radiation,0,0,0,1374.0,1374.0,1374.0,Late Stage
+HN-HGJ-055,M,Oropharynx,T3,N3,M0,IVB,-,2744.0,chemo radiation,0,0,0,2744.0,2744.0,2744.0,Late Stage
+HN-HGJ-056,M,Nasopharynx,T3,N2b,M0,III,,974.0,chemo radiation,0,0,1,974.0,974.0,974.0,Late Stage
+HN-HGJ-057,F,Oropharynx,T1,N2a,M0,IVA,,2268.0,chemo radiation,0,0,0,2268.0,2268.0,2268.0,Late Stage
+HN-HGJ-058,M,Oropharynx,T2,N2b,M0,IVA,,2688.0,chemo radiation,0,0,0,2688.0,2688.0,2688.0,Late Stage
+HN-HGJ-060,M,Nasopharynx,T4,N1,M0,IVA,-,1608.0,chemo radiation,0,0,0,1608.0,1608.0,1608.0,Late Stage
+HN-HGJ-061,M,Larynx,T3,N1,M0,III,-,686.0,chemo radiation,0,1,1,686.0,649.0,686.0,Late Stage
+HN-HGJ-062,M,Oropharynx,T3,N0,M0,III,+,1392.0,chemo radiation,0,0,0,1392.0,1392.0,1392.0,Late Stage
+HN-HGJ-063,M,Larynx,T3,N0,M0,III,-,1318.0,chemo radiation,0,0,0,1318.0,1318.0,1318.0,Late Stage
+HN-HGJ-064,M,Larynx,T3,N2b,M0,IVA,-,1376.0,chemo radiation,0,0,0,1376.0,1376.0,1376.0,Late Stage
+HN-HGJ-065,M,Oropharynx,T3,N2c,M0,IVA,+,1280.0,chemo radiation,0,0,0,1280.0,1280.0,1280.0,Late Stage
+HN-HGJ-066,M,Oropharynx,T1,N2c,M0,IVA,+,1262.0,chemo radiation,0,0,0,1262.0,1262.0,1262.0,Late Stage
+HN-HGJ-067,M,Oropharynx,T1,N0,M0,I,+,1384.0,radiation,0,0,0,1384.0,1384.0,1384.0,Early Stage
+HN-HGJ-069,M,Oropharynx,T3,N2a,M0,IVA,+,1311.0,chemo radiation,0,0,0,1311.0,1311.0,1311.0,Late Stage
+HN-HGJ-070,M,Oropharynx,T1,N2a,M0,IVA,-,1003.0,chemo radiation,0,0,0,1003.0,1003.0,1003.0,Late Stage
+HN-HGJ-071,M,Oropharynx,T3,N2b,M0,IVA,+,1014.0,chemo radiation,0,0,0,1014.0,1014.0,1014.0,Late Stage
+HN-HGJ-072,M,Oropharynx,T1,N1,M0,III,+,1030.0,chemo radiation,0,0,0,1030.0,1030.0,1030.0,Late Stage
+HN-HGJ-073,M,Oropharynx,T2,N2b,M0,IVA,+,1298.0,chemo radiation,0,0,0,1298.0,1298.0,1298.0,Late Stage
+HN-HGJ-074,M,Oropharynx,T3,N2b,M0,IVA,+,1294.0,chemo radiation,0,0,0,1294.0,1294.0,1294.0,Late Stage
+HN-HGJ-075,F,Nasopharynx,T1,N2a,M0,III,-,1238.0,chemo radiation,0,0,0,1238.0,1238.0,1238.0,Late Stage
+HN-HGJ-076,M,Oropharynx,T4,N2c,M0,IVA,+,1272.0,chemo radiation,0,0,0,1272.0,1272.0,1272.0,Late Stage
+HN-HGJ-077,M,Oropharynx,T2,N1,M0,III,+,1196.0,chemo radiation,0,0,0,1196.0,1196.0,1196.0,Late Stage
+HN-HGJ-078,M,Oropharynx,T2,N1,M0,III,-,1158.0,chemo radiation,1,0,0,418.0,1158.0,1158.0,Late Stage
+HN-HGJ-079,M,Nasopharynx,T2,N2b,M0,III,-,1140.0,chemo radiation,0,1,0,1140.0,805.0,1140.0,Late Stage
+HN-HGJ-080,F,Oropharynx,T1,N2a,M0,IVA,+,1112.0,chemo radiation,0,0,0,1112.0,1112.0,1112.0,Late Stage
+HN-HGJ-081,M,Oropharynx,T2,N2b,M0,IVA,-,938.0,chemo radiation,1,0,0,726.0,938.0,938.0,Late Stage
+HN-HGJ-082,M,Oropharynx,T1,N3,Mx,IVB,-,1059.0,chemo radiation,0,1,0,1059.0,211.0,1059.0,Late Stage
+HN-HGJ-083,M,Oropharynx,T3,N2c,M0,IVA,-,869.0,chemo radiation,0,0,0,869.0,869.0,869.0,Late Stage
+HN-HGJ-084,F,Hypopharynx,T3,N1,Mx,III,-,794.0,chemo radiation,0,0,0,794.0,794.0,794.0,Late Stage
+HN-HGJ-085,M,Oropharynx,T3,N2b,M0,IVA,-,953.0,chemo radiation,0,1,0,953.0,699.0,953.0,Late Stage
+HN-HGJ-086,F,Oropharynx,T1,N2b,M0,IVA,+,815.0,chemo radiation,0,1,0,815.0,815.0,815.0,Late Stage
+HN-HGJ-087,M,Oropharynx,T2,N0,M0,II,+,727.0,radiation,0,0,0,727.0,727.0,727.0,Early Stage
+HN-HGJ-088,M,Oropharynx,T2,N0,M0,II,+,858.0,chemo radiation,0,0,0,858.0,858.0,858.0,Early Stage
+HN-HGJ-089,M,Oropharynx,T1,N2c,M0,IVA,+,444.0,chemo radiation,0,1,0,444.0,329.0,444.0,Late Stage
+HN-HGJ-090,M,Oropharynx,T2,N2a,M0,IVA,+,817.0,chemo radiation,0,0,0,817.0,817.0,817.0,Late Stage
+HN-HGJ-091,M,Oropharynx,T3,N0,M0,III,+,719.0,chemo radiation,0,0,0,719.0,719.0,719.0,Late Stage
+HN-HGJ-092,M,Oropharynx,T2,N1,M0,III,+,824.0,chemo radiation,0,0,0,824.0,824.0,824.0,Late Stage
+HN-CHUS-039,M,Oropharynx,T2,N2,M0,IVA,,,chemo radiation,1,1,1,407.0,464.0,1332.0,Late Stage
+HN-CHUS-059,M,Nasopharynx,T3,N2,M0,IVA,,,radiation,1,1,1,143.0,496.0,528.0,Late Stage
+HN-HMR-001,M,Oropharynx,T4a,N2c,M0,IVA,,699.0,chemo radiation,1,0,1,523.0,699.0,1521.0,Late Stage
+HN-HMR-002,M,Hypopharynx,T4b,N2c,M0,IVB,,194.0,chemo radiation,0,1,1,194.0,138.0,195.0,Late Stage
+HN-HMR-003,M,Nasopharynx,T4,N0,M0,IVA,,666.0,chemo radiation,1,0,1,436.0,666.0,864.0,Late Stage
+HN-HMR-004,M,Oropharynx,T2,N2c,M0,IVA,,2007.0,chemo radiation,0,0,0,2007.0,2007.0,2007.0,Late Stage
+HN-HMR-005,M,Oropharynx,T4a,N2b,M0,IVA,,1964.0,chemo radiation,0,1,1,1964.0,1071.0,2044.0,Late Stage
+HN-HMR-006,M,Nasopharynx,T3,N3b,M0,IVB,,1164.0,chemo radiation,0,1,0,1164.0,618.0,1164.0,Late Stage
+HN-HMR-007,M,Oropharynx,T2,N0,M0,III,,1793.0,radiation,0,0,0,1793.0,1793.0,1793.0,Late Stage
+HN-HMR-008,F,Hypopharynx,T2,N2c,M0,IVA,,895.0,chemo radiation,0,0,1,895.0,895.0,1094.0,Late Stage
+HN-HMR-009,M,Nasopharynx,T1,N1,M0,IIB,,2136.0,radiation,0,0,0,2136.0,2136.0,2136.0,Early Stage
+HN-HMR-010,M,Larynx,T3,N0,M0,III,,2113.0,chemo radiation,0,0,0,2113.0,2113.0,2113.0,Late Stage
+HN-HMR-011,M,Oropharynx,T2,N3,M0,IVB,,670.0,chemo radiation,0,1,1,670.0,725.0,749.0,Late Stage
+HN-HMR-012,M,Oropharynx,T2,N0,M0,II,,713.0,radiation,0,0,1,713.0,713.0,859.0,Early Stage
+HN-HMR-013,M,Oropharynx,T2,N2b,M0,IVA,,1534.0,chemo radiation,0,0,0,1534.0,1534.0,1534.0,Late Stage
+HN-HMR-014,M,Oropharynx,Tx,N2b,M0,IVA,,1602.0,chemo radiation,0,0,0,1602.0,1602.0,1602.0,Late Stage
+HN-HMR-015,M,Hypopharynx,T2,N0,M0,II,,2003.0,radiation,1,0,0,609.0,2003.0,2003.0,Early Stage
+HN-HMR-016,F,Oropharynx,T4a,N2c,M0,IVA,,1562.0,chemo radiation,0,0,0,1562.0,1562.0,1562.0,Late Stage
+HN-HMR-017,M,Larynx,T2,N1,M0,III,,776.0,radiation,0,0,0,776.0,776.0,776.0,Late Stage
+HN-HMR-018,M,Hypopharynx,T3,N2c,M0,IVA,,1344.0,radiation,0,0,1,1344.0,1344.0,1395.0,Late Stage
+HN-HMR-019,F,Larynx,T2,N2c,M0,IVA,,2121.0,chemo radiation,0,0,0,2121.0,2121.0,2121.0,Late Stage
+HN-HMR-020,M,Oropharynx,T2,N2b,M0,IVA,,1184.0,chemo radiation,0,0,0,1184.0,1184.0,1184.0,Late Stage
+HN-HMR-021,M,Oropharynx,T4,N2b,M0,IVA,,686.0,chemo radiation,0,1,1,686.0,596.0,783.0,Late Stage
+HN-HMR-022,M,Larynx,T3,N2c,M0,IVA,,731.0,chemo radiation,1,0,0,216.0,731.0,731.0,Late Stage
+HN-HMR-023,M,Oropharynx,T4,N2c,M0,IVA,,1633.0,chemo radiation,0,0,0,1633.0,1633.0,1633.0,Late Stage
+HN-HMR-024,F,Oropharynx,T3,N2c,M0,IVA,,1937.0,chemo radiation,0,0,0,1937.0,1937.0,1937.0,Late Stage
+HN-HMR-025,M,Oropharynx,T4,N2b,M0,IVA,+,1106.0,chemo radiation,0,0,0,1106.0,1106.0,1106.0,Late Stage
+HN-HMR-026,M,Hypopharynx,T4b,N2c,M0,IVB,,426.0,chemo radiation,0,1,1,426.0,202.0,437.0,Late Stage
+HN-HMR-027,M,Nasopharynx,T3,N1,M0,III,,918.0,chemo radiation,0,1,1,918.0,434.0,968.0,Late Stage
+HN-HMR-028,M,Oropharynx,T4,N2c,M0,IVA,,491.0,chemo radiation,0,0,1,491.0,491.0,540.0,Late Stage
+HN-HMR-029,M,Oropharynx,T2,N2b,M0,IVA,+,1842.0,chemo radiation,0,0,0,1842.0,1842.0,1842.0,Late Stage
+HN-HMR-030,M,Oropharynx,T2,N2b,M0,IVA,,1269.0,chemo radiation,0,0,0,1269.0,1269.0,1269.0,Late Stage
+HN-HMR-031,F,Hypopharynx,T3,N1,M0,III,,1492.0,chemo radiation,1,1,1,1554.0,1554.0,1563.0,Late Stage
+HN-HMR-032,F,Hypopharynx,T4b,N2c,M0,IVB,,321.0,chemo radiation,1,1,1,307.0,307.0,323.0,Late Stage
+HN-HMR-033,M,Larynx,T3,N2c,M0,IVB,,531.0,chemo radiation,0,0,1,531.0,531.0,531.0,Late Stage
+HN-HMR-034,F,Oropharynx,T2,N2b,M0,IVA,,1720.0,chemo radiation,0,0,0,1720.0,1720.0,1720.0,Late Stage
+HN-HMR-035,M,Larynx,T3,N3,M0,IVA,,624.0,radiation,1,0,1,621.0,624.0,730.0,Late Stage
+HN-HMR-036,M,Larynx,T2,N2b,M0,IVA,,1850.0,chemo radiation,0,0,0,1850.0,1850.0,1850.0,Late Stage
+HN-HMR-037,F,Nasopharynx,T2,N3b,M0,IVB,,585.0,chemo radiation,0,1,1,585.0,289.0,639.0,Late Stage
+HN-HMR-038,M,Larynx,T2,N2b,M0,IVA,,585.0,chemo radiation,1,0,1,631.0,585.0,740.0,Late Stage
+HN-HMR-039,M,Nasopharynx,T1,N3b,M0,IVB,,255.0,chemo radiation,1,1,1,222.0,222.0,288.0,Late Stage
+HN-HMR-040,F,Oropharynx,T4,N2c,M0,IVA,,1468.0,chemo radiation,0,0,0,1468.0,1468.0,1468.0,Late Stage
+HN-HMR-041,F,Larynx,T2,N2,M0,IVA,,668.0,chemo radiation,0,0,0,668.0,668.0,668.0,Late Stage
+HN-CHUM-001,M,Oropharynx,T2,N2,M0,IV,,1806.0,chemo radiation,0,0,0,1806.0,1806.0,1806.0,Late Stage
+HN-CHUM-002,M,Oropharynx,T3,N2,M0,IV,,805.0,chemo radiation,1,0,0,571.0,805.0,805.0,Late Stage
+HN-CHUM-006,M,Oropharynx,T2,N2,M0,IV,,1287.0,chemo radiation,0,0,0,1287.0,1287.0,1287.0,Late Stage
+HN-CHUM-007,F,Oropharynx,T2,N2,M0,IV,,1806.0,radiation,0,0,0,1806.0,1806.0,1806.0,Late Stage
+HN-CHUM-008,F,Oropharynx,T2,N2,M0,IV,,1603.0,chemo radiation,0,0,0,1603.0,1603.0,1603.0,Late Stage
+HN-CHUM-010,M,Oropharynx,T1,N2,M0,IV,,1741.0,chemo radiation,0,0,0,1741.0,1741.0,1741.0,Late Stage
+HN-CHUM-011,M,Oropharynx,T3,N2,M0,IV,,1603.0,chemo radiation,0,0,0,1603.0,1603.0,1603.0,Late Stage
+HN-CHUM-012,M,Oropharynx,T2,N1,M0,III,+,1617.0,chemo radiation,0,0,0,1617.0,1617.0,1617.0,Late Stage
+HN-CHUM-013,F,Oropharynx,T1,N2,M0,IV,,1338.0,chemo radiation,0,0,0,1338.0,1338.0,1338.0,Late Stage
+HN-CHUM-014,M,Oropharynx,T2,N1,M0,IV,+,1636.0,chemo radiation,0,0,0,1636.0,1636.0,1636.0,Late Stage
+HN-CHUM-015,M,Oropharynx,T1,N1,M0,III,,1470.0,chemo radiation,0,0,0,1470.0,1470.0,1470.0,Late Stage
+HN-CHUM-016,M,Oropharynx,T2,N2,M0,IV,+,1511.0,chemo radiation,0,0,0,1511.0,1511.0,1511.0,Late Stage
+HN-CHUM-017,M,Oropharynx,T3,N2,M0,IV,,1233.0,chemo radiation,0,1,0,1233.0,1233.0,1233.0,Late Stage
+HN-CHUM-018,F,Oropharynx,T2,N0,M0,II,,1449.0,radiation,0,0,0,1449.0,1449.0,1449.0,Early Stage
+HN-CHUM-019,M,Oropharynx,T2,N2,M0,IV,,1272.0,chemo radiation,0,0,0,1272.0,1272.0,1272.0,Late Stage
+HN-CHUM-020,M,Nasopharynx,T3,N3,M0,IV,,350.0,chemo radiation,1,0,1,186.0,350.0,350.0,Late Stage
+HN-CHUM-021,M,Oropharynx,T4,N2,M0,IV,+,1343.0,chemo radiation,0,0,0,1343.0,1343.0,1343.0,Late Stage
+HN-CHUM-022,M,Oropharynx,T2,N2,M0,IV,+,1357.0,chemo radiation,0,0,0,1357.0,1357.0,1357.0,Late Stage
+HN-CHUM-023,F,Oropharynx,T2,N2,M0,IV,,1412.0,chemo radiation,0,0,0,1412.0,1412.0,1412.0,Late Stage
+HN-CHUM-024,M,Oropharynx,T3,N2,M0,IV,,1147.0,chemo radiation,0,0,0,1147.0,1147.0,1147.0,Late Stage
+HN-CHUM-026,F,Oropharynx,T2,N3,M0,IV,+,1308.0,chemo radiation,0,0,0,1308.0,1308.0,1308.0,Late Stage
+HN-CHUM-027,F,Oropharynx,T3,N2,M0,IV,,1014.0,chemo radiation,0,0,0,1014.0,1014.0,1014.0,Late Stage
+HN-CHUM-028,M,Hypopharynx,T3,N2,M0,IV,-,627.0,chemo radiation,1,0,1,279.0,627.0,627.0,Late Stage
+HN-CHUM-029,M,Oropharynx,T2,N3,M0,IV,+,1328.0,chemo radiation,0,0,0,1328.0,1328.0,1328.0,Late Stage
+HN-CHUM-030,M,Oropharynx,T3,N2,M0,IV,,1000.0,chemo radiation,0,0,0,1000.0,1000.0,1000.0,Late Stage
+HN-CHUM-031,M,Oropharynx,T2,N2,M0,IV,,1188.0,chemo radiation,0,0,0,1188.0,1188.0,1188.0,Late Stage
+HN-CHUM-032,M,Oropharynx,T3,N2,M0,IV,,1190.0,chemo radiation,0,0,0,1190.0,1190.0,1190.0,Late Stage
+HN-CHUM-033,M,Oropharynx,T3,N2,M0,IV,+,1261.0,chemo radiation,0,0,0,1261.0,1261.0,1261.0,Late Stage
+HN-CHUM-034,M,Oropharynx,T3,N2,M0,IV,,1183.0,chemo radiation,0,0,0,1183.0,1183.0,1183.0,Late Stage
+HN-CHUM-035,M,Oropharynx,T3,N3,M0,IV,,1153.0,chemo radiation,0,0,0,1153.0,1153.0,1153.0,Late Stage
+HN-CHUM-036,M,Oropharynx,T1,N2,M0,IV,+,1237.0,chemo radiation,0,0,0,1237.0,1237.0,1237.0,Late Stage
+HN-CHUM-037,F,Oropharynx,T2,N2,M0,IV,+,1207.0,chemo radiation,0,0,0,1207.0,1207.0,1207.0,Late Stage
+HN-CHUM-038,M,Oropharynx,T1,N2,M0,IV,,891.0,chemo radiation,0,0,0,891.0,891.0,891.0,Late Stage
+HN-CHUM-039,M,Oropharynx,T2,N2,M0,IV,+,1076.0,chemo radiation,0,1,1,1076.0,624.0,1076.0,Late Stage
+HN-CHUM-040,M,Oropharynx,T1,N2,M0,IV,+,1106.0,chemo radiation,0,0,0,1106.0,1106.0,1106.0,Late Stage
+HN-CHUM-041,M,Oropharynx,T2,N1,M0,III,+,1132.0,chemo radiation,0,0,0,1132.0,1132.0,1132.0,Late Stage
+HN-CHUM-042,M,Oropharynx,T2,N2,M0,IV,,1120.0,chemo radiation,0,0,0,1120.0,1120.0,1120.0,Late Stage
+HN-CHUM-043,M,Oropharynx,T4,N2,M0,IV,+,1222.0,chemo radiation,0,0,0,1222.0,1222.0,1222.0,Late Stage
+HN-CHUM-044,F,Oropharynx,T2,N2,M0,IV,+,966.0,chemo radiation,0,0,0,966.0,966.0,966.0,Late Stage
+HN-CHUM-045,M,Oropharynx,T1,N2,M0,IV,+,891.0,chemo radiation,0,0,0,891.0,891.0,891.0,Late Stage
+HN-CHUM-046,F,Oropharynx,T1,N1,M0,III,+,753.0,radiation,0,0,0,753.0,753.0,753.0,Late Stage
+HN-CHUM-047,F,Oropharynx,T2,N2,M0,IV,,862.0,chemo radiation,0,0,0,862.0,862.0,862.0,Late Stage
+HN-CHUM-048,M,Oropharynx,T2,N0,M0,II,,980.0,radiation,0,0,0,980.0,980.0,980.0,Early Stage
+HN-CHUM-049,M,Oropharynx,T4,N0,M0,IV,,1310.0,chemo radiation,0,0,0,1310.0,1310.0,1310.0,Late Stage
+HN-CHUM-050,M,Oropharynx,T3,N2,M0,IV,,1427.0,chemo radiation,0,0,0,1427.0,1427.0,1427.0,Late Stage
+HN-CHUM-051,M,Oropharynx,T2,N2,M0,IV,+,1465.0,chemo radiation,1,0,0,993.0,1465.0,1465.0,Late Stage
+HN-CHUM-052,M,Nasopharynx,T2,N2,M0,III,,787.0,chemo radiation,0,0,0,787.0,787.0,787.0,Late Stage
+HN-CHUM-053,F,Oropharynx,T3,N2,M0,IV,-,766.0,chemo radiation,1,0,1,531.0,766.0,766.0,Late Stage
+HN-CHUM-054,M,Oropharynx,T2,N1,M0,III,,818.0,chemo radiation,0,0,0,818.0,818.0,818.0,Late Stage
+HN-CHUM-055,F,Oropharynx,T4,N1,M0,IV,+,1238.0,chemo radiation,0,0,0,1238.0,1238.0,1238.0,Late Stage
+HN-CHUM-056,M,Oropharynx,T3,N3,M0,IV,,943.0,chemo radiation,0,0,0,943.0,943.0,943.0,Late Stage
+HN-CHUM-057,M,Oropharynx,T2,N2,M0,IV,,1043.0,chemo radiation,0,0,0,1043.0,1043.0,1043.0,Late Stage
+HN-CHUM-058,F,Oropharynx,T2,N3,M0,IV,+,974.0,chemo radiation,0,0,0,974.0,974.0,974.0,Late Stage
+HN-CHUM-059,M,Oropharynx,T2,N2,M0,IV,,796.0,chemo radiation,0,0,0,796.0,796.0,796.0,Late Stage
+HN-CHUM-060,M,Oropharynx,T4,N3,M0,IV,+,881.0,chemo radiation,0,0,0,881.0,881.0,881.0,Late Stage
+HN-CHUM-061,M,Oropharynx,T2,N2,M0,IV,,464.0,chemo radiation,1,0,1,428.0,464.0,464.0,Late Stage
+HN-CHUM-062,M,Oropharynx,T3,N1,M0,III,,1379.0,chemo radiation,0,0,0,1379.0,1379.0,1379.0,Late Stage
+HN-CHUM-063,M,Oropharynx,T3,N2,M0,IV,,2012.0,chemo radiation,1,1,0,832.0,832.0,2012.0,Late Stage
+HN-CHUM-064,M,Oropharynx,T3,N3,M0,IV,,870.0,chemo radiation,0,0,0,870.0,870.0,870.0,Late Stage
+HN-CHUM-065,M,Oropharynx,T3,N0,M0,IV,,788.0,chemo radiation,0,0,0,788.0,788.0,788.0,Late Stage
